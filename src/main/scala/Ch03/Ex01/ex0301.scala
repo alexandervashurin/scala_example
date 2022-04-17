@@ -4,7 +4,7 @@ package Ch03 {
 
   package Ex01 {
 
-    object Main extends App {
+    object ex0310 extends App {
       def createArray(n: Int): Array[Int] = {
         (0 until n).toArray
       }
