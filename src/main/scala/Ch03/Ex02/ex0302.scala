@@ -6,7 +6,7 @@ package Ch03 {
 
     object ex0302 extends App {
       def replaceElsInArray(arr: Array[Int]): Array[Int] = {
-        var result = new ArrayBuffer[Int]()
+        val result = new ArrayBuffer[Int]()
         for (i <- arr.indices by +2) {
           if (i + 1 < arr.length) {
             result += arr(i + 1)
