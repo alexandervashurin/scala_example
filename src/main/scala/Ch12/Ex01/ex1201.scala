@@ -3,7 +3,6 @@ package Ch12 {
     object ex1201 extends App {
       // До примера в задании выглядит все так, будто функция должна возвращать коллекцию Int
       // А в примере - коллекция пар (Int, Int)
-      // Решила сделать две функции
       def values(fun: (Int) => Int, low: Int, high: Int) = (low to high).map(fun)
       def valuesTuples(fun: (Int) => Int, low: Int, high: Int) =
         (low to high).map(x => Tuple2(x, fun(x)))
